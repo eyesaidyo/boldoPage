@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+body {
+  width: 100%;
+}
+.blue {
+  color: #0a2640;
+  font-weight: 700;
+}
+.date {
+  color: #777777;
+}
+.bold {
+  font-weight: 400;
+}
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  color: #0a2640;
+  font-weight: 400;
+}
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.logo span {
+  font-size: 2.703rem;
+  line-height: 2.102rem;
+}
+.logo {
+  font-weight: 700;
+  align-items: center;
+  color: #0a2640;
+  display: flex;
+  gap: 10px;
+}
+.rightLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 600;
+}
+.loginBtn {
+  padding: 8px 40px;
+  border-radius: 24px;
+  border: 2px solid #0a2640;
+  font-weight: 600;
+  background-color: #fff;
+}
+.thoughts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 50px auto;
+}
+.headline {
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.headlineRight {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.headlineText {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.postsWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.postItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-betweenS;
+}
+.latest {
+  margin-left: 176px;
+  margin-top: 100px;
+}
+.loadMore {
+  display: block;
+  margin: 100px auto;
+  width: 219px;
+  border-radius: 56px;
+  border: 2px solid #0a2640;
+  background-color: white;
+  padding: 16px 56px;
+  font-size: 1.25rem;
+}
+.cta {
+  background-color: #0a2640;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 50px;
+}
+.ctaText {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+.emailWrap {
+  border-radius: 240px;
+  width: 370px;
+  border: 2px solid #fff;
+  padding: 16px 56px;
+  background-color: #fff;
+}
+.email {
+  outline: none;
+  width: 180px;
+  border: none;
+}
+.email ::-webkit-input-placeholder {
+  color: black;
+}
+.startBtn {
+  background: #65e4a3;
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: none;
+  color: #0a2640;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer {
+  padding: 80px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: 1fr 2fr;
+}
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerRight {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerHeading {
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  .postsWrap {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .headline {
+    flex-wrap: wrap;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+    display: none;
+  }
+  .logo {
+    scale: 0.5;
+  }
+  .loginBtn {
+    scale: 0.5;
+  }
+  .headline {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .housesImg {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .houseswrap {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .postsWrap {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+  .thoughts {
+    text-align: center;
+  }
+  .headlineRight {
+    align-items: center;
+    text-align: center;
+  }
+  .latest {
+    text-align: center;
+    margin: 0;
+  }
+}
