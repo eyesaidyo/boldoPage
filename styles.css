@@ -183,6 +183,14 @@ h1 {
 .footerHeading {
   font-weight: 700;
 }
+.hiring {
+  color: #0a2640;
+  background: #65e4a3;
+  padding: 1px 14px;
+  border-radius: 120px;
+  font-weight: 700;
+  font-size: 0.8125rem;
+}
 @media screen and (max-width: 800px) {
   .postsWrap {
     grid-template-columns: 1fr 1fr;
